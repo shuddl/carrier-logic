@@ -16,7 +16,7 @@ module.exports = {
     },
     devServer: {
         static: {
-            directory: path.join(__dirname, 'public'),
+            directory: path.join(__dirname, '../build'),
         },
         port: 9000,
         proxy: {
@@ -74,7 +74,7 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: './public/index.html'
+            template: path.resolve(__dirname, '../build/index.html')
         })
     ]
 };
