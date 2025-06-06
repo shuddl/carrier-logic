@@ -11,7 +11,7 @@ module.exports = {
   },
   devServer: {
     static: {
-      directory: path.join(__dirname, 'dist'),
+      directory: path.join(__dirname, 'build'),
     },
     port: 8000,
     hot: false,
@@ -50,7 +50,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './public/index.html', // Ensure this path is correct
+      template: './build/index.html', // Updated path to match the existing file
     }),
   ],
 };

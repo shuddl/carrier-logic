@@ -1,4 +1,4 @@
-import React, { ErrorBoundary } from 'react';
+import React from 'react';
 import { TestDashboard } from './TestDashboard';
 
 class ErrorBoundary extends React.Component {
